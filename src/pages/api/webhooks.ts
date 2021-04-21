@@ -1,6 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { Readable } from 'stream';
-
 import Stripe from 'stripe';
 import { stripe } from '../../services/stripe';
 import { saveSubscription } from "./_lib/menageSubscription";
@@ -26,6 +25,7 @@ export const config = {
 
 const relevantEvents = new Set([
   'checkout.session.completed',
+  'customer.subscription.created',
   'checkout.subscription.updated',
   'checkout.subscription.deleted',
 ])
@@ -48,6 +48,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     if(relevantEvents.has(type)) {
       try{
         switch (type) {
+          case 'customer.subscription.created':
           case 'customer.subscription.updated':
           case 'customer.subscription.deleted':
             
@@ -56,7 +57,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             await saveSubscription(
               subscription.id,
               subscription.customer.toString(),
-              false
+              type === 'customer.subscription.created',
             );
             
             break;
