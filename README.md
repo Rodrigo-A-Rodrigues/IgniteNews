@@ -47,14 +47,14 @@ E acessando a página de posts, será possível visualizar a seguinte página:
 </br>
 
 ```bash
-✔ PRISMIC_TOKEN</br> 
-✔ PRISMIC_ENDPOINT</br>
+✔ PRISMIC_TOKEN 
+✔ PRISMIC_ENDPOINT
 ✔ DATABASE_KEY</br>
-✔ NEXT_PUBLIC_STRIPE_PUBLIC_KEY</br>
-✔ STRIPE_WEBHOOK_SECRET</br>
-✔ STRIPE_API_KEY</br>
-✔ GITHUB_CLIENT_SECRET</br>
-✔ GITHUB_CLIENT_ID</br>
+✔ NEXT_PUBLIC_STRIPE_PUBLIC_KEY
+✔ STRIPE_WEBHOOK_SECRET
+✔ STRIPE_API_KEY
+✔ GITHUB_CLIENT_SECRET
+✔ GITHUB_CLIENT_ID
 ```
 ## Learn More
 
