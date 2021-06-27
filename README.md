@@ -1,8 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Hello World
+Blog pago utilizando o Stripe como meio de pagamento e o Faunadb como armazenamento de dados dos clientes registrados. Para isso, foi usado: 
+</br>
+✔ NextJS</br> 
+✔ Next-auth</br>
+✔ Prismic</br>
+✔ Sass</br>
+✔ Stripe</br>
+✔ Faunadb</br>
+✔ Axios</br>
+✔ Typescript</br>
+✔ React-icons</br>
+
+Esse projeto é 100% funcional então é possível publicar esse projeto e gerar uma renda extra ou montar uma newslatter. 
+</br>
+É possível aplicar o conceito desse projeto de múltiplas formas para torná-lo mais completo ou fazer algo totalmente diferente do existente. Pense e crie 😁 
 
 ## Getting Started
 
-First, run the development server:
+Primeiro, rode esses comandos no seu terminal para instalar as dependências do projeto:
+
+```bash
+npm install
+#or
+yarn 
+```
+Para rodar sua aplicação utilize o camando:
 
 ```bash
 npm run dev
@@ -10,14 +32,30 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Será aberto em [http://localhost:3000](http://localhost:3000) o resultado desse projeto.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Logo, será possível visualizar a seguinte página: 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+![Screenshots](./public/screenshot/Ignews.png)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+E acessando a página de posts, será possível visualizar a seguinte página:
 
+![Screenshots](./public/screenshot/ignewspost.jpeg)
+
+## .ENV
+É necessário definir as variáveis ambientes para esse projeto funcionar de forma correta. Para isso, crie na raiz do seu projeto um arquivo .env para as seguintes variáveis: 
+</br>
+
+```bash
+✔ PRISMIC_TOKEN</br> 
+✔ PRISMIC_ENDPOINT</br>
+✔ DATABASE_KEY</br>
+✔ NEXT_PUBLIC_STRIPE_PUBLIC_KEY</br>
+✔ STRIPE_WEBHOOK_SECRET</br>
+✔ STRIPE_API_KEY</br>
+✔ GITHUB_CLIENT_SECRET</br>
+✔ GITHUB_CLIENT_ID</br>
+```
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
